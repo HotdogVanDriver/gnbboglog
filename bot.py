@@ -77,7 +77,7 @@ async def tally(ctx):
     valid_users = {user_id: count for user_id, count in poop_tally.items() if count > 0}
 
     if not valid_users:  # If no users have sent poops, send only this message
-        await ctx.send("No poop have been counted yet! 💩")
+        await ctx.send("No bogs have been counted yet! 💩")
         return
 
     # If there are valid users, create the leaderboard
