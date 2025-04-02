@@ -81,7 +81,7 @@ async def tally(ctx):
         return
 
     # If there are valid users, create the leaderboard
-    tally_message = "**💩 Poop Leaderboard 💩**\n"
+    tally_message = "**💩 Bog Leaderboard 💩**\n"
     for user_id, count in sorted(valid_users.items(), key=lambda x: x[1], reverse=True):
         user = await bot.fetch_user(int(user_id))  # Convert back to int
         tally_message += f"**{user.name}**: {count} 💩\n"
